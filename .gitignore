@@ -1,6 +1,8 @@
 # Ignore release artifacts and local build outputs
 release-assets/
 
+.cmd
+
 # macOS
 .DS_Store
 

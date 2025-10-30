@@ -108,11 +108,11 @@ unit Customer.Details.DM;          // TDMCustomerDetails / DMCustomerDetails
 function Add(const AValue1, AValue2: Integer): Integer;
 ```
 
-**→ See full documentation below for details.**
+**→ 자세한 내용은 아래 전체 문서를 참조하세요.**
 
 ---
 
-## Table of Contents
+## 목차
 
 - [1. Formatting](#1-formatting)
 - [2. Naming Conventions](#2-naming-conventions)
@@ -131,7 +131,7 @@ function Add(const AValue1, AValue2: Integer): Integer;
 
 ### 1.1 들여쓰기
 
-Use 2 spaces per logical block. Avoid tabs as they may render differently across editors.
+논리적 블록당 공백을 2개 사용합니다. 탭(Tab)은 편집기마다 다르게 표시될 수 있으므로 사용하지 않는 것을 권장합니다.
 
 ```pascal
 procedure Example;
@@ -144,43 +144,43 @@ begin
 end;
 ```
 
-### 1.2 Line length
+### 1.2 행 길이
 
-- Max 120 characters per line.
+- 한 행에 최대 120자
 
-The historical default of 80 characters comes from text terminals. In modern projects, 120 chars has become a de facto standard because it strikes a good balance between readability and context. On modern displays, this has become the lived standard for most Delphi developers.
+80자라는 기존 기본값은 텍스트 터미널에서 유래되었습니다. 최신 프로젝트에서는 가독성과 맥락의 균형을 잘 맞추기 때문에 120자가 사실상 표준이 되었습니다. 최신 디스플레이에서는 대부분의 델파이 개발자에게 120자가 표준으로 자리 잡았습니다.
 
-Note: If you use an automatic formatter and the editor's vertical guideline, keep both settings (line length/guideline) in sync to avoid inconsistent wrapping.
+참고: 자동 서식 지정 도구와 편집기의 세로 가이드라인을 사용하는 경우 두 설정(줄 길이/가이드라인)을 동기화하여 일관되지 않은 래핑을 방지하세요.
 
-### 1.3 Comments
+### 1.3 주석
 
-- `//` single-line comments
-- `{}` multi-line comments
-- `(* *)` temporarily commented-out code
-- `///` XML documentation comments
+- `//` 한 줄 주석
+- `{}` 여러 줄 주석
+- `(* *)` 일시적으로 주석 처리된 코드
+- `///` XML 문서 주석
 
 ```pascal
-// Single-line comment
+// 한 줄 주석
 
-{ Multi-line
-  comment }
+{ 여러 줄
+  주석 }
 
-(* Temporarily disabled code
+(* 일시적으로 비활성화 된 코드
    procedure OldMethod;
    begin
      // ...
    end; *)
 
 /// <summary>
-/// Documentation comment for a method
+/// 메서드에 대한 문서 주석
 /// </summary>
-/// <param name="AValue">Parameter description</param>
+/// <param name="AValue">매개변수 설명</param>
 procedure DocumentedMethod(const AValue: string);
 ```
 
-### 1.4 Compiler directives
+### 1.4 컴파일러 지시자
 
-Uppercase inside braces, not indented. Nested directives may be indented for readability.
+중괄호 안에서는 대문자로 작성하고 들여쓰기는 하지 않습니다. 중첩된 지시어는 가독성을 위해 들여쓰기할 수 있습니다.
 
 ```pascal
 {$IFDEF DEBUG}
@@ -195,11 +195,11 @@ Uppercase inside braces, not indented. Nested directives may be indented for rea
 {$ENDREGION}
 ```
 
-### 1.5 Statement syntax
+### 1.5 명령문 구문
 
-- One statement per line
+- 한 줄에 한 문장
 - `begin`/`end` on their own lines
-- Prefer `begin..end` even for single statements, except simple ones like `raise`, `exit`, `continue`, `break`
+- `raise`, `exit`, `continue`, `break`와 같은 간단한 문장을 제외하고 단일 문장의 경우에도 `begin..end`를 선호합니다.
 
 ```pascal
 // Preferred - with begin..end
