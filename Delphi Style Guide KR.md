@@ -3,9 +3,8 @@
 > 버전: 1.0
 > 작성자: Johan S. Lee
 > 업데이트: 2025-10-30
-
-> 참고: 이 스타일 가이드는 Olaf Monien 씨가 작성한 Delphi Style Guide v2.1 영어판을 한국어로 번역한 것입니다.
-
+> 참고: 이 한국어 스타일 가이드는 Olaf Monien 씨가 작성한 Delphi Style Guide v2.1 영어판을 번역한 것입니다.
+  일부 오역이 있을 수 있습니다. 더 나은 번역을 제공하실 분은 제보해 주시기 바랍니다.
 
 이 가이드는 최신 델파이 프로젝트의 형식 및 명명 규칙을 정의합니다. 가독성, 유지 관리 용이성, 그리고 팀 일관성을 향상시키는 것을 목표로 합니다.
 
@@ -225,7 +224,7 @@ end;
 
 ---
 
-## 2. Naming Conventions
+## 2. 명명 규칙
 
 PascalCase throughout the codebase (types, methods, variables, constants, parameters).
 
